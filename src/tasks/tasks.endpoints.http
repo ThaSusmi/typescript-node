@@ -1,0 +1,23 @@
+# Fetch all tasks
+
+GET http://localhost:3000/tasks
+Content-Type: application/json
+
+# Create new task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+{
+  "title":"Another title",
+  "date": "2022-03-10T11:38:00Z",
+  "description":"This task was a hell of a task to achieve",
+  "priority":"normal",
+  "status":"todo"
+}
+
+# Update A task
+PUT http://localhost:3000/tasks
+Content-Type: application/json
+{
+  "id":"fbb3554a-fd16-411c-a70a-615588c906e7",
+  "status":"inProgress"
+}
